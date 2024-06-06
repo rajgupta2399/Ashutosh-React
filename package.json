@@ -1,0 +1,29 @@
+{
+  "name": "ashreact",
+  "version": "1.0.0",
+  "description": "react by Ashutosh",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajgupta2399/Ashutosh-React.git"
+  },
+  "keywords": [
+    "ashrreact",
+    "raj",
+    "ashu"
+  ],
+  "author": "Ashutosh",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
