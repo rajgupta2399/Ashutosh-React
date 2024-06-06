@@ -1,45 +1,34 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import Header from "./Header";
 
-// const heading = document.createElement("h2");
-// heading.innerHTML = "Hello World From Dynamic";
 
-// const Root = document.getElementById("root1");
-// Root.appendChild(heading);
+const parent = <h1>hello</h1>; // JSX - javascript XML
 
-// const heading1 = React.createElement(
-//   "h1",
-//   { id: "head" }, // -- Attribute
-//   "Hello World From React by ash" // -- inner HTML
-// );
-// console.log(heading1);
+// Class Components
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello Class Components</h1>
+        <Header propsName="Props Passing"/>
+      </div>
+    );
+  }
+}
 
-// <div id="Parent">
+export default App;
+{
+  /*
+function Component 
+const App1 = () =>{
+    return(
+        <>
+            <h1>Hello Function Components</h1>
+        </>
+    )
+}
 
-//   <div id="child1">
-//     <h1>Hello HTML</h1>
-//     <h1>Hello JS</h1>
-//   </div>
+export default App1;
+*/
+}
 
-//   <div id="child2">
-//     <h1>Hello React</h1>
-//   </div>
-
-// </div>;
-
-// const parent = React.createElement("div", { id: "Parent" }, [
-//   // div 1
-//   React.createElement("div", { id: "child1" }, [
-//     React.createElement("h1", { class: "head1" }, "Hello World from HTML"),
-//     React.createElement("h2", { class: "head2" }, "Hello World from JS"),
-//   ]),
-
-//   // div 2
-//   React.createElement("div", { id: "child2" }, [
-//     React.createElement("h3", { class: "head3" }, "Hello World from React"),
-//   ]),
-// ]);
-const parent = <h1>hello</h1>       // JSX - javascript XML
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
